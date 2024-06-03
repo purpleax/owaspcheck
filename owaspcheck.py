@@ -92,6 +92,19 @@ def check_outdated_version(target):
     else:
         print("[Info] No server header found.")
 
+def test_all(target):
+    print("\nTesting all OWASP Top 10 vulnerabilities...\n")
+    test_sql_injection(target)
+    test_xss(target)
+    test_open_redirect(target)
+    test_https(target)
+    test_directory_listing(target)
+    test_admin_interface(target)
+    test_xxe(target)
+    test_insecure_deserialization(target)
+    check_outdated_version(target)
+    print("\nAll tests completed.\n")
+
 def main():
     parser = argparse.ArgumentParser(description="OWASP Top 10 Vulnerability Scanner")
     parser.add_argument("target", help="The target server URL (e.g., http://example.com)")
@@ -108,9 +121,10 @@ def main():
         print("7. XML External Entities (XXE)")
         print("8. Insecure Deserialization")
         print("9. Using Components with Known Vulnerabilities")
-        print("10. Exit")
+        print("10. Test All")
+        print("11. Exit")
 
-        choice = input("Enter your choice (1-10): ")
+        choice = input("Enter your choice (1-11): ")
 
         if choice == '1':
             test_sql_injection(args.target)
@@ -131,6 +145,8 @@ def main():
         elif choice == '9':
             check_outdated_version(args.target)
         elif choice == '10':
+            test_all(args.target)
+        elif choice == '11':
             sys.exit(0)
         else:
             print("Invalid choice. Please select a valid option.")
