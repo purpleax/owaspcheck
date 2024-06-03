@@ -19,16 +19,16 @@ pip install requests
 
 Run the script with the target server URL as an argument:
 
-    python owasp_scanner.py http://your-target-server
+    python owasp_scanner.py http://your-target-server
 
 Script Explanation:
 
-    Menu: The script presents a menu with options to test for various OWASP Top 10 vulnerabilities.
-    Target: The target server URL is specified via the command line.
-    Tests: The script performs basic checks for the selected vulnerability.
+    Menu: The script presents a menu with options to test for various OWASP Top 10 vulnerabilities.\
+    Target: The target server URL is specified via the command line.\
+    Tests: The script performs basic checks for the selected vulnerability.
 
 Important Notes:
 
-    This script provides only basic checks and is not a substitute for comprehensive security testing.
-    Testing should be performed in a controlled environment with explicit permission.
-    For more advanced and thorough testing, consider using dedicated tools like OWASP ZAP, Burp Suite, or commercial solutions.
+    This script provides only basic checks and is not a substitute for comprehensive security testing.\
+    Testing should be performed in a controlled environment with explicit permission.\
+    For more advanced and thorough testing, consider using dedicated tools like OWASP ZAP, Burp Suite, or commercial solutions.
