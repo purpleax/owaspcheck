@@ -27,8 +27,4 @@ Script Explanation:
     Target: The target server URL is specified via the command line.\
     Tests: The script performs basic checks for the selected vulnerability.
 
-Important Notes:
 
-    This script provides only basic checks and is not a substitute for comprehensive security testing.\
-    Testing should be performed in a controlled environment with explicit permission.\
-    For more advanced and thorough testing, consider using dedicated tools like OWASP ZAP, Burp Suite, or commercial solutions.
