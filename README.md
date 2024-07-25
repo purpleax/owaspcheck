@@ -26,6 +26,3 @@ Script Explanation:
     Menu: The script presents a menu with options to test for various OWASP Top 10 vulnerabilities.\
     Target: The target server URL is specified via the command line.\
     Tests: The script performs basic checks for the selected vulnerability.
-
-
-New Update test 
