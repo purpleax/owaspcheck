@@ -28,3 +28,4 @@ Script Explanation:
     Tests: The script performs basic checks for the selected vulnerability.
 
 
+New Update test 
